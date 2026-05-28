@@ -1,0 +1,6 @@
+services:
+  tg-vikunja:
+    image: ghcr.io/koresent/tg-vikunja:latest
+    container_name: tg-vikunja
+    restart: unless-stopped
+    env_file: .env
